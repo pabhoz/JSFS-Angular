@@ -1,0 +1,3 @@
+<div class="equipos" *ngFor="let equipo of equipos">
+  <div>{{equipo.nombre}} <input type="text" [value]="equipo.puntos" (keyup)="updateScore($event,equipo.nombre)"></div>
+</div>
